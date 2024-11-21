@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms-Level-1_1</title>
+</head>
+<body>
+    <form>
+        <!-- - Name -->
+        <legend>Name <span class="required">*</span></legend>
+        <section class="form-row">
+            
+            <div class="form-group">
+                <label for="vorname"></label>
+                <input type="text"
+                name="vorname" 
+                placeholder="Vorname"
+                required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="nachname"></label>
+                <input type="text"
+                name="nachname" 
+                placeholder="Nachname"
+                required>
+            </div>
+        </section>   
+
+        <!-- - E-Mail -->
+            
+        <legend>Email <span class="required">*</span></legend>
+            <section class="text">
+                <label for=""></label>
+                <input type="text" 
+                name="textinput"
+                required>
+            </section>
+        
+        <!-- - Select -->
+        <section>
+            <legend>Thema</legend>
+            <div>
+                <select name="destination">
+                    <option value="">Advertise</option>
+                    <option value="general">General</option>
+                    <option value="kaufen">Kaufen</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="nachricht">Nachricht</option> 
+                    required                
+                </select>
+            </div>
+        </section>
+
+        <!-- - Text Area -->
+        <legend>Nachricht <span class="required">*</span></legend>        
+        <section>
+            <div>
+                <textarea
+                name="Nachricht"
+                cols="30"
+                rows="10"
+                ></textarea>
+            </div>
+        </section>
+            
+            <!-- - Submit / Burron -->
+        <section>
+                <input type="submit" value="Submit" />
+        </section>
+    </form>
+</body>
+</html>
